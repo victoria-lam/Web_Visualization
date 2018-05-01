@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <meta charset="UTF-8">
+    <title>CSS Stylesheets with Relative Paths</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<body>    
+	 <div class="container">
+	 <!--Navigation bar-->
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+    </div>
+    
+    <h2 class="page-heading">Humidity</h2>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-7 col-sm-12 background ind-size">
+                <h3 class="section-heading text-left text">Summary of Findings</h3>
+                
+                <div class="text-center">
+    				<img src="LatvHum.png" alt="..." class="figure-img img-fluid rounded ind-fig">		
+        			</div>
+  	      				<p>Since humidity ranges from <20% to 100% across various cities at different 
+  	      				latitudes, there is no significant relationship between the latitude and humidity.</p>
+  	      				</p>
+        			</div>
+            <div class="col-lg-4 col-sm-12 vis-background vis-size" class="float-sm-left float-md-left">
+                <h3 class="section-heading text-left text">Visualizations</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-sm-3">
+                        <img src="LatvTemp.png" alt="Lat. v Temp." class="img-size ">
+                    </div>
+                    <div class="col-lg-6 col-sm-3">    
+                        <img src="LatvHum.png" alt="Lat. v Hum." class="img-size img">
+                    </div>
+                    <div class="col-lg-6 col-sm-3">
+                        <img src="LatvCloud.png" alt="Lat. v Cloud." class="img-size">
+                    </div>
+                    <div class="col-lg-6 col-sm-3">
+                        <img src="LatvWind.png" alt="Lat. v Wind." class="img-size">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer></footer>
+</html>
